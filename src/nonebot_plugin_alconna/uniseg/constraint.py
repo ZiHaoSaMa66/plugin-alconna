@@ -11,6 +11,8 @@ log = logger_wrapper("Plugin-Uniseg")
 class SupportAdapter(str, Enum):
     """支持的适配器"""
 
+    opq = "OPQ"
+    
     console = "Console"
     ding = "Ding"
     discord = "Discord"
@@ -41,6 +43,8 @@ class SupportAdapter(str, Enum):
 
 class SupportScope(str, Enum):
     """支持的平台范围"""
+
+    opq = "OPQ"
 
     qq_client = "QQClient"
     """QQ 协议端"""

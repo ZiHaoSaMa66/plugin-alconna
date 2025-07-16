@@ -504,3 +504,7 @@ async def select_efchat(target: "Target", bot: Bot):
     if target.channel:
         return False
     return bot.adapter.get_name() == SupportAdapter.efchat
+
+@_register(SupportScope.opq)
+async def select_opq(target: "Target", bot: Bot):
+    return bot.adapter.get_name() == SupportAdapter.opq
